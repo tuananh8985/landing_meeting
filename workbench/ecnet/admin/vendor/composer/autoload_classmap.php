@@ -66,6 +66,7 @@ return array(
     'Cartalyst\\Sentry\\Users\\UserNotActivatedException' => $vendorDir . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
     'Cartalyst\\Sentry\\Users\\UserNotFoundException' => $vendorDir . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
     'Cartalyst\\Sentry\\Users\\WrongPasswordException' => $vendorDir . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
+    'ClientsController' => $baseDir . '/src/controllers/ClientsController.php',
     'Comment' => $baseDir . '/src/models/Comment.php',
     'CommentsController' => $baseDir . '/src/controllers/CommentsController.php',
     'Contact' => $baseDir . '/src/models/Contact.php',

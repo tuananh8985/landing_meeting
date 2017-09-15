@@ -35,6 +35,7 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+    'ClientsController' => $baseDir . '/workbench/ecnet/admin/src/controllers/ClientsController.php',
     'Comment' => $baseDir . '/workbench/ecnet/admin/src/models/Comment.php',
     'CommentsController' => $baseDir . '/workbench/ecnet/admin/src/controllers/CommentsController.php',
     'Contact' => $baseDir . '/workbench/ecnet/admin/src/models/Contact.php',

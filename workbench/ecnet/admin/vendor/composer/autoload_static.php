@@ -117,6 +117,7 @@ class ComposerStaticInite5df264cff92d4d0363f97a342be15ca
         'Cartalyst\\Sentry\\Users\\UserNotActivatedException' => __DIR__ . '/..' . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
         'Cartalyst\\Sentry\\Users\\UserNotFoundException' => __DIR__ . '/..' . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
         'Cartalyst\\Sentry\\Users\\WrongPasswordException' => __DIR__ . '/..' . '/cartalyst/sentry/src/Cartalyst/Sentry/Users/Exceptions.php',
+        'ClientsController' => __DIR__ . '/../..' . '/src/controllers/ClientsController.php',
         'Comment' => __DIR__ . '/../..' . '/src/models/Comment.php',
         'CommentsController' => __DIR__ . '/../..' . '/src/controllers/CommentsController.php',
         'Contact' => __DIR__ . '/../..' . '/src/models/Contact.php',

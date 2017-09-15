@@ -23,10 +23,9 @@ class ClientsController extends BaseController {
      */
     public function index()
     {
-    	dd(11);
-        $users = Sentry::findAllUsers();
-
-        return View::make('admin::admin.users.index', compact('users'));
+    	
+        $users = User::where('role',0)->get();
+        return View::make('admin::admin.clients.index', compact('users'));
     }
 
     /**
@@ -36,7 +35,7 @@ class ClientsController extends BaseController {
      */
     public function create()
     {
-        return View::make('admin::admin.users.create');
+        return View::make('admin::admin.clients.create');
     }
 
     /**
@@ -53,17 +52,17 @@ class ClientsController extends BaseController {
         {
             $result = User::createUser($input);
             if($result ==true)
-                return Redirect::route('admin.users.index')
+                return Redirect::route('admin.clients.index')
             ->with('message','bạn đã tạo thành công thành viên: '.$input['last_name']);
             else{
-                return Redirect::route('admin.users.create')
+                return Redirect::route('admin.clients.create')
                 ->withInput()
                 ->withErrors($validation)
                 ->with('message', $result);
             }
         }
 
-        return Redirect::route('admin.users.create')
+        return Redirect::route('admin.clients.create')
         ->withInput()
         ->withErrors($validation)
         ->with('message', 'There were validation errors.');
@@ -79,7 +78,7 @@ class ClientsController extends BaseController {
     {
         $user = $this->user->findOrFail($id);
 
-        return View::make('admin::admin.users.show', compact('user'));
+        return View::make('admin::admin.clients.show', compact('user'));
     }
 
     /**
@@ -94,10 +93,10 @@ class ClientsController extends BaseController {
 
         if (is_null($user))
         {
-            return Redirect::route('admin.users.index');
+            return Redirect::route('admin.clients.index');
         }
 
-        return View::make('admin::admin.users.edit', compact('user'));
+        return View::make('admin::admin.clients.edit', compact('user'));
     }
 
     /**
@@ -133,15 +132,15 @@ class ClientsController extends BaseController {
            }else{
                     // pass ko đúng return back
             Session::flash('error_pass','Mật khẩu cũ không chính xác.');
-            return Redirect::route('admin.users.edit', $id)
+            return Redirect::route('admin.clients.edit', $id)
             ->withInput();
         }
                 // check pass exit
     }
-    return Redirect::route('admin.users.index');
+    return Redirect::route('admin.clients.index');
 }
 
-return Redirect::route('admin.users.edit', $id)
+return Redirect::route('admin.clients.edit', $id)
 ->withInput()
 ->withErrors($validation)
 ->with('message', 'There were validation errors.');
@@ -157,7 +156,7 @@ return Redirect::route('admin.users.edit', $id)
     {
         $this->user->find($id)->delete();
 
-        return Redirect::route('admin.users.index');
+        return Redirect::route('admin.clients.index');
     }
     public function logout(){
         Sentry::logout();

@@ -277,6 +277,7 @@ class ComposerStaticInit29483c6e8d724e893893e8620a94034f
         'ClassPreloader\\Parser\\DirVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
         'ClassPreloader\\Parser\\FileVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
         'ClassPreloader\\Parser\\NodeTraverser' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+        'ClientsController' => __DIR__ . '/../..' . '/workbench/ecnet/admin/src/controllers/ClientsController.php',
         'Comment' => __DIR__ . '/../..' . '/workbench/ecnet/admin/src/models/Comment.php',
         'CommentsController' => __DIR__ . '/../..' . '/workbench/ecnet/admin/src/controllers/CommentsController.php',
         'Contact' => __DIR__ . '/../..' . '/workbench/ecnet/admin/src/models/Contact.php',
