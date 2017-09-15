@@ -81,7 +81,7 @@
         <div class="container">
           <div class="tzHeaderContainer">
             <a class="pull-left tz_logo" href="http://wordpress.templaza.net/wp-maniva/meetup" title="Home">
-              <img class="logo_lager" src="../wp-content/uploads/2015/09/logo-meetup1.png" alt="Home" />
+              <img class="logo_lager" src="{{asset('landing_meetup/wp-content/uploads/2015/09/logo-meetup1.png')}}" alt="Home" />
             </a>
             <div class="tzHeaderMenu_nav">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tz-navbar-collapse">
